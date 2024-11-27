@@ -1,0 +1,15 @@
+.dashboardSidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.showFilter {
+    left: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.hideFilter {
+    left: -100%;
+    transition: 0.5s all ease-in-out;
+}

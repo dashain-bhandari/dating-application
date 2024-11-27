@@ -1,0 +1,53 @@
+
+.overlay-arrows-left, .overlay-arrows-right{
+    display: flex;
+    background-color:red;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    cursor: pointer;
+}
+.overlay-arrows-left{
+    left: 0;
+}
+.overlay-arrows-right{
+    right: 0;
+}
+.overlay-arrows-left i, .overlay-arrows-right i{
+    margin-left: 5px;
+    font-size: 35px;
+    color: white;
+}
+
+.gallery-overlay{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    background-color: rgba(0, 0, 0, 0.831);
+}
+.dismiss{
+    float: right;
+    color: white;
+    position: absolute;
+    top: 4rem;
+    right: 28%;
+    font-size: 40px;
+    cursor: pointer;
+}
+.gallery-overlay img{
+    position: absolute;
+    top: 16%;
+    left: 35.5%;
+    z-index: 999;
+    width: 30rem;
+    height: 33rem;
+    border-radius: 10px;
+}

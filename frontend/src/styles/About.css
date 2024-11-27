@@ -1,0 +1,134 @@
+.aboutsection {
+  padding-top: 6rem;
+  
+}
+.aboutsection-first-details h1 {
+  font-weight: 800;
+  color: rgba(57, 57, 57, 0.872);
+}
+.aboutsection-first-details {
+  padding: 2rem 0 3rem 0 ;
+  text-align: center;
+}
+
+.aboutsection-first-details h2 {
+  font-size: 1.2em;
+  line-height: 1.6rem;
+  font-family: "Signika", sans-serif;
+  color: rgba(57, 57, 57, 0.872);
+}
+.aboutsection-first-details h2 strong {
+  font-weight: 500;
+  color: #ed177e;
+}
+.aboutsection-second-details {
+  text-align: center;
+}
+.aboutsection-second-details h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(57, 57, 57, 0.872);
+}
+.aboutsection-second-details-way {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* padding-bottom: 6rem; */
+  /* row-gap: 3rem; */
+}
+.make,
+.meet,
+.marry {
+  min-width: 18rem;
+  padding-top: 1.5rem;
+  flex-basis: 30.33%;
+  /* height: 22rem; */
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  color: rgba(57, 57, 57, 0.872);
+}
+.make h2,
+.meet h2,
+.marry h2 {
+  color: #ed177e;
+}
+.make img,
+.meet img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.make,.meet,.marry img {
+  width: 100%;
+  height: 64.2%;
+  object-fit: cover;
+  border-radius: 10px;
+  object-position: top;
+}
+.aboutsection-third-details {
+  text-align: center;
+  /* padding: 0 11rem 8rem; */
+  color: rgba(57, 57, 57, 0.872);
+}
+.aboutsection-third-details h1 {
+  font-weight: 800;
+ 
+}
+.aboutsection-third-details h2 strong {
+  color: #ed177e;
+  font-weight: 500;
+}
+.aboutsection-third-details h2 {
+  font-size: 1.2em;
+  line-height: 1.6rem;
+  font-family: "Signika", sans-serif;
+  padding-bottom: 1.5rem;
+}
+.aboutsection-third-details button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: rgba(57, 57, 57, 0.872);
+}
+.aboutsection-third-details button:hover {
+  background-color: white;
+}
+@media screen and (max-width: 1400px) {
+  .make,
+  .meet,
+  .marry img {
+    height: 54%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .make,
+  .meet,
+  .marry img {
+    height: 45%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .aboutsection-first-details {
+    /* padding: 0 3rem 8rem; */
+  }
+  .aboutsection-third-details {
+    /* padding: 0 3rem 8rem; */
+  }
+}
+
+/* WebKit/Blink browsers (Chrome, Safari) */
+.customScrollbar::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Firefox */
+.customScrollbar {
+  scrollbar-width: none; /* For newer versions of Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge Legacy */
+.customScrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}

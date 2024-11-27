@@ -1,0 +1,95 @@
+.preferenceSection {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.preferenceSection h1 {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.491);
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.preferenceSection-form {
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preferanceSection-detail {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.PreferenceSection-form-left,
+.PreferenceSection-form-middle,
+.PreferenceSection-form-right {
+  flex-basis: 33.33%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.preferenceSection-form input {
+  border: 0px;
+  border-radius: 8px;
+  padding: 8px 20px 8px 8px;
+  font-size: 14px;
+  width: 80%;
+}
+.preferenceSection-form input:focus {
+  outline: 0px;
+}
+.PreferenceSection-form-btn {
+  text-align: center;
+}
+.PreferenceSection-form-btn button {
+  width: 5rem;
+  margin-right: 1rem;
+  padding: 4px 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.PreferenceSection-form-btn .btnprev {
+  border: 1px solid #ed177e !important;
+  color: #ed177e !important;
+}
+
+.btnnext {
+  background-image: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91);
+}
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+.group label {
+  color: #999;
+  font-size: 14px;
+  position: absolute;
+  pointer-events: none;
+  left: 7px;
+  top: 8px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.preferenceSection-form .group input:focus {
+  border: 1px solid #ed177e;
+}
+.preferenceSection-form .group input:focus ~ label,
+.preferenceSection-form .group input:valid ~ label {
+  top: -7px;
+  font-size: 11px;
+  color: #ed177e;
+  background-color: #fff;
+}

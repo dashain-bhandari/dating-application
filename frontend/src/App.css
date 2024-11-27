@@ -1,0 +1,969 @@
+/*------------------------------------------------ Navbar CSS ---------------------------------------- */
+/* 
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  z-index: 1000;
+  position: fixed;
+  /* background-color: #FA4A6F; */
+
+  /* background-image: linear-gradient(170deg, #ec1c24, #ff1f70, #ed177e, #662d91); */
+/* }  */
+*/
+
+/* .navbar-item {
+  font-family: "Satoshi", sans-serif;
+} */
+/* @media screen and (max-width: 992px) {
+  .Navbar-items {
+    flex-basis: 50%;
+    column-gap: 1rem;
+  }
+} */
+/* 
+@media screen and (max-width: 768px) {
+  .Navbar {
+    padding: 1rem;
+  }
+} */
+
+/* .navbar-logo img {
+  width: 6em;
+} */
+
+/* .Navbar-items {
+  display: flex;
+  margin-top: 1vh;
+  column-gap: 3rem;
+  list-style: none;
+  flex-basis: 70%;
+  justify-content: space-between;
+} */
+
+/* .Navbar-items .navbar-item a { */
+  /* color: black; */
+  /* text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  margin-right: 10px; */
+  /* color: white ; */
+  /* background-image: linear-gradient(to-right, #ff1f70, #311465); */
+  /* font-size: 1rem; */
+  /* background: linear-gradient( #E61A52, #5115f6); */
+  /* background: -webkit-linear-gradient( #E61A52, #511ddd); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+/* } */
+
+/* .cool-link.active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+} */
+/* .cool-link::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  top: 20px;
+  left: -0px;
+}
+.cool-link:hover::after {
+  width: 100%;
+} */
+ 
+.nav-btn {
+  padding: 7px 25px;
+  font-size: 15px;
+  color: white !important;
+  border: 0px solid;
+  border-radius: 8px;
+  background-color: #79489f;
+}
+/* @keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+} */
+
+.hero-section {
+  /* animation: zoomIn 10s ease-in-out infinite alternate; */
+  transition: background-image 1s ease-in-out;
+}
+/* .nav-btn:hover {
+  color: rgb(235, 30, 30);
+  transition: all 0.21s ease-in-out;
+} */
+.sidenavbar {
+  display: none !important;
+}
+.navbar-toggle {
+  display: none !important;
+}
+.sidenavbar {
+  display: none !important;
+}
+.navbar-toggle {
+  display: none !important;
+}
+
+/*------------------------------------------------ Navbar Responsive CSS ----------------------------------------- */
+
+@media screen and (max-width: 640px) {
+  .Navbar {
+    padding: 1rem;
+  }
+  .navbar-toggle {
+    display: flex;
+    font-size: 30px;
+    color: rgb(222, 222, 222);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .sidenavbar {
+    display: block !important;
+  }
+  .navbar-toggle {
+    display: block !important;
+  }
+  .sidenavbar {
+    display: block !important;
+  }
+  .navbar-toggle {
+    display: block !important;
+  }
+  .navbar-toggle:hover {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+
+  .Navbar-items {
+    display: none;
+  }
+  .sidenavblur {
+    background-color: #000;
+    bottom: -100%;
+    display: block;
+    height: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    position: fixed;
+    transition: all 0.5s ease;
+    z-index: 200;
+  }
+  .sidenav {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    bottom: -100%;
+    display: block;
+    height: 500px !important;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    position: fixed;
+    transition: all 0.5s ease;
+    z-index: 212;
+  }
+  .snbar {
+    background-color: #aaa;
+    height: 3px;
+    margin: 0 40%;
+    width: 20%;
+  }
+  .sidenavbar-items {
+    /* margin-top: 5rem; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+  }
+  .sidenavbar-items li {
+    margin-top: 1rem;
+    color: black;
+  }
+
+  .sidenavblur {
+    background-color: #000;
+    bottom: -100%;
+    display: block;
+    height: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    position: fixed;
+    transition: all 0.5s ease;
+    z-index: 200;
+  }
+  .sidenav {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    bottom: -100%;
+    display: block;
+    height: 400px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    position: fixed;
+    transition: all 0.5s ease;
+    z-index: 212;
+  }
+  .snbar {
+    background-color: #aaa;
+    height: 3px;
+    margin: 0 40%;
+    width: 20%;
+  }
+  .sidenavbar-items {
+    /* margin-top: 5rem; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+  }
+  .sidenavbar-items li {
+    /* margin-top: 1rem; */
+    color: black;
+  }
+}
+
+/* -------------------------------------------- The End ---------------------------------------------------------------------- */
+
+/* -------------------------------------------- HeroSection CSS ---------------------------------------------------------------------- */
+
+.input6 button {
+  white-space: nowrap;
+  padding: 7px 20px;
+  margin-top: 23px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: #79489f;
+}
+.input6 button:hover {
+  /* color: black; */
+  transition: all 0.2s ease-in-out;
+}
+.lbl {
+  white-space: nowrap;
+  margin-left: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+.herosection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-color: var(--primary-light); */
+  /* background-image: url('./images/cover.jpg'); */
+  /* background-position: top; */
+  /* background-size: cover; */
+}
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.age {
+  display: flex;
+  justify-content: center;
+}
+.input1 {
+  flex-basis: 20%;
+}
+.input2 {
+  flex-basis: 20%;
+}
+.input5 {
+  flex-basis: 20%;
+}
+.input6 {
+  flex-basis: 10%;
+  /* background-color: #311465; */
+}
+.input6 button {
+  background: var(--secondary);
+}
+.input4 {
+  display: flex;
+  margin-top: 23px;
+  gap: 10px;
+  align-items: center;
+}
+.glass-container {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.458);
+  opacity: 0.8;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.middlehero {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.glass-text {
+  color: white;
+  text-align: center;
+  margin-top: 22rem;
+  font-size: 30px;
+}
+
+/* -------------------------------------------- HeroSection Responsive CSS ---------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .middlehero {
+    width: 100%;
+    padding-inline: 4px;
+    flex-direction: column;
+    
+    gap: 0.2rem;
+    align-items: normal;
+  }
+  .glass-text {
+    margin-top: 5rem;
+  }
+  .age {
+    width: 100%;
+    display: flex;
+  }
+  .Age-input4 {
+    width: 100px;
+  }
+  .age .input3,
+  .age .input4 {
+    flex-basis: 50%;
+  }
+  .input6 button {
+    width: 100%;
+  }
+}
+
+/* -------------------------------------------- The End ---------------------------------------------------------------------- */
+
+/* -------------------------------------------- First ---------------------------------------------------------------------- */
+.first {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--primary-light);
+  padding: 1rem 0;
+}
+.first p {
+  font-size: 20px;
+  color: white;
+}
+/* -------------------------------------------- The End ---------------------------------------------------------------------- */
+
+/* -------------------------------------------- Second ---------------------------------------------------------------------- */
+
+.second {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+.second h6:first-child {
+  text-align: center;
+  font-size: 17px;
+  font-size: 17px;
+}
+.secondborder {
+  margin-top: 2rem;
+  border-radius: 20px;
+  border: 2px solid rgba(128, 128, 128, 0.29);
+  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 3.5rem;
+  background-color: rgb(247, 247, 247);
+}
+.secondborder .nav {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.608);
+  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.nav.nav-pills {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.religion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+.religion button {
+  padding: 0.4rem 2rem;
+  padding: 0.4rem 2rem;
+  border-radius: 20px;
+  color: rgb(80, 75, 75);
+  border: 1px solid rgba(255, 29, 29, 0.526);
+  font-weight: 600;
+}
+.religion button:hover {
+  color: white;
+  background-color: var(--primary-light);
+}
+.secondborder .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #ec1c24;
+  background: none;
+}
+.secondborder .nav-link {
+  color: rgb(73, 70, 70);
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.secondborder .nav-link:hover {
+  color: #ec1c24 !important;
+}
+.secondborder .nav-link.active.cool::after {
+  width: 100%;
+}
+/* .cool::after {
+  content: "";
+  display: flex;
+  width: 0%;
+  height: 3px;
+  background: #ec1c24 !important;
+  transition: width 0.2s;
+  margin-bottom: 18px;
+} */
+/* .cool:hover::after {
+  width: 100%;
+} */
+/* -------------------------------------------- Second Responsive CSS ---------------------------------------------------------------------- */
+/* -------------------------------------------- Second Responsive CSS ---------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .religion button {
+    flex-basis: 40%;
+  }
+  .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    padding: 0.5rem;
+  }
+  .religion button {
+    flex-basis: 40%;
+  }
+  .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    padding: 0.5rem;
+  }
+  .second .swiper-wrapper {
+    display: flex;
+    text-align: center;
+    text-align: center;
+  }
+  .secondborder {
+    padding: 0.8rem 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .second .swiper-wrapper {
+    display: flex;
+    text-align: center;
+  }
+  .religion button {
+    flex-basis: 35%;
+    padding: 0.3rem 1rem;
+    white-space: nowrap;
+    padding: 0.8rem 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .second .swiper-wrapper {
+    display: flex;
+    text-align: center;
+  }
+  .religion button {
+    flex-basis: 35%;
+    padding: 0.3rem 1rem;
+    white-space: nowrap;
+  }
+}
+
+/* -------------------------------------------- The End ---------------------------------------------------------------------- */
+
+/* -------------------------------------------- Third ---------------------------------------------------------------------- */
+.third {
+  position: relative;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+.third_cover {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 70%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  z-index: 1;
+}
+.third_caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: absolute;
+  top: 5vw;
+  bottom: 0;
+  left: 5vw;
+  right: 0;
+  z-index: 111;
+}
+.third_caption h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ec1c24, #ff1f70, #ed177e, #662d91);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.third_caption h2 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+.third_caption h4 {
+  font-size: 5.2vw;
+  font-weight: bold;
+  background: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -------------------------------------------- Third Responsive CSS ---------------------------------------------------------------------- */
+
+/* -------------------------------------------- The End ---------------------------------------------------------------------- */
+
+/* -------------------------------------------- Fourth ---------------------------------------------------------------------- */
+
+.fourth .container {
+  padding: 2rem;
+  background: #e9e7e7;
+  border-radius: 30px;
+  margin-bottom: 2px;
+}
+.trust {
+  text-align: center;
+  padding: 40px 0 25px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  /* background: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91); */
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+}
+.partners row {
+  background-color: white;
+}
+.simple {
+  width: 75%;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.accordion-item {
+  width: 100%;
+  font-size: 1em;
+  border-radius: 0px;
+  margin-bottom: 17px;
+}
+/* .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+} */
+/* .accordion-item:first-of-type {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+} */
+.accordion-item {
+  width: 40rem;
+  background: #dbdbdb;
+  position: relative;
+  border-radius: 20px;
+}
+.accordion-item h2 button {
+  text-decoration: none;
+  color: #ed177e !important;
+  box-shadow: none !important;
+  background: #ebebeb;
+  font-family: "Poppins"!important; 
+  font-weight: 500;
+
+}
+.accordion-item h2 button:hover {
+  text-decoration: none;
+  box-shadow: none !important;
+}
+.accordion-item h2 button.collapsed {
+  box-shadow: none !important;
+  border-radius: 0px;
+  transition: all 0.4s ease-in-out;
+}
+.accordion-item h2 button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+  background: #dbdbdb;
+  border-radius: 0px 40px 0px 0px !important;
+}
+.accordion-header:not(.collapsed) {
+  background: #dbdbdb;
+  border-radius: 0px;
+}
+/* .accordion-item .accordion-body {
+  background-color: #e3e3e3;
+} */
+/* .accordion-button::after {
+  content: "+";
+  font-size: 25px;
+  /* color: red; */
+/* background-color: var(--primary-light); */
+/* transform: none !important; */
+/* position: absolute !important; */
+/* right: 9px !important; */
+/* top: 9px !important; */
+/* position: absolute !important; */
+/* right: 9px !important; */
+/* top: 9px !important; */
+/* padding: 5px; */
+/* border: 1px solid red; */
+/* border-radius: 50%; */
+/* }  */
+/* .accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.accordion-item:last-of-type {
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+} */
+
+.accordion-item .accordion-body {
+  width: 100%;
+  width: 100%;
+  /* background-color: #e3e3e3; */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.accordion-body p {
+  color: rgb(39, 39, 39);
+  font-weight:500;
+}
+
+/* -------------------------------------------- Fourth Responsive CSS ----------------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+  .accordion-item {
+    width: 30rem;
+  }
+  .simple {
+    width: 80%;
+  }
+  .simple {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .accordion-item {
+    width: 100%;
+  }
+  .simple {
+    width: 65%;
+  }
+  .simple {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .accordion-item {
+    margin-right: 2rem;
+    width: 22rem;
+  }
+  .accordion-item h2 button {
+    font-size: 14px;
+  }
+  .accordion-item {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .accordion-item {
+    width: 18rem;
+  }
+  .accordion-item h2 {
+    padding: 0 10px;
+  }
+  .accordion-item h2 button {
+    font-size: 14px;
+  }
+  .accordion-item {
+    font-size: 0.8em;
+  }
+  .accordion-button::after {
+    font-size: 20px;
+    position: absolute;
+    right: 0px !important;
+    top: 20px !important;
+    right: 0px !important;
+    top: 20px !important;
+  }
+}
+
+/* -------------------------------------------- Fifth ----------------------------------------------------------------------*/
+.Fifth {
+  position: relative;
+}
+.sec_cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 70%;
+}
+
+.sec_caption {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sec_caption h2 {
+  font-size: 3.7vw;
+  font-weight: bold;
+  background: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sec_caption h3 {
+  font-size: 1.5vw;
+  color: white;
+}
+.sec_caption h4 {
+  font-size: 1.8vw;
+  font-weight: bold;
+  background: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* -------------------------------------------- Fifth Responsive CSS ----------------------------------------------------------------------*/
+
+/* -------------------------------------------- The End ----------------------------------------------------------------------*/
+
+/* -------------------------------------------- sixth CSS ----------------------------------------------------------------------*/
+
+.card {
+  /* border-radius: 30px; */
+  height: 450px !important;
+  width: 350px !important;
+}
+.card h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 80%;
+}
+.card ul {
+  list-style: none;
+  margin: 10px;
+}
+.card ul li {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.card ul li i {
+  color: #ec1c24;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.card button {
+  background-color: white;
+  border-radius: 0px;
+  padding: 8px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ec1c24;
+  border: 2px solid #ec1c24;
+}
+.card button:hover {
+  color: white;
+  background-color: var(--primary-light);
+  border: 2px solid #ec1c24;
+  transition: all 0.2s ease-in-out;
+}
+.Standard {
+  color: white;
+  background-color: var(--primary-light);
+}
+.Standard ul li i {
+  color: white;
+}
+.Standard button {
+  color: white;
+  background: transparent;
+  border-color: white;
+}
+.Standard button:hover {
+  color: #ec1c24;
+  background: white;
+  border-color: white;
+}
+
+/* -------------------------------------------- Seventh CSS ----------------------------------------------------------------------*/
+
+.seventh {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: var(--primary-light);
+}
+.txt {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: white;
+}
+.upcarousel {
+  padding: 2rem 0 0;
+}
+
+@media screen and (max-width: 992px) {
+  .txt {
+    text-align: center;
+    writing-mode: horizontal-tb;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .txt {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+}
+
+.collapse {
+  visibility: visible !important;
+}
+
+/* loader in popup payment integration  */
+.loader {
+  width: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ball {
+  list-style: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2060aa;
+}
+
+.ball:nth-child(1) {
+  animation: bounce-1 2.1s ease-in-out infinite;
+}
+
+@keyframes bounce-1 {
+  50% {
+    transform: translateY(-90px);
+    scale: 0.3;
+  }
+}
+
+.ball:nth-child(2) {
+  animation: bounce-3 2.1s ease-in-out 0.3s infinite;
+}
+
+@keyframes bounce-2 {
+  50% {
+    transform: translateY(-90px);
+    scale: 0.3;
+  }
+}
+
+.ball:nth-child(3) {
+  animation: bounce-3 2.1s ease-in-out 0.6s infinite;
+}
+
+@keyframes bounce-3 {
+  50% {
+    transform: translateY(-90px);
+    scale: 0.3;
+  }
+}
+
+/* popup css */
+.popup-content{
+  width: 100% !important;
+}
+
+@media screen and (max-width: 400px) {
+  .mantine-1gnwfpi {
+    display: flex !important;
+    flex-direction: column !important;
+    column-gap: 5px !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #eb4566 !important;
+}
+
+/* dateinput field */
+.mantine-j3jbtx {
+  position: fixed !important;
+  top: 20% !important;
+
+}

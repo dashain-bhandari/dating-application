@@ -1,0 +1,98 @@
+.UploadProfileSection {
+  padding: 3rem;
+}
+.UploadProfileSection h1 {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.491);
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.UploadProfileSection-btn {
+  text-align: center;
+}
+.UploadProfileSection-btn button {
+  width: 5rem;
+  margin-right: 1rem;
+  padding: 4px 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+.UploadProfileSection-btn .btnprev {
+  border: 1px solid #ed177e !important;
+  color: #ed177e !important;
+}
+
+.btnnext {
+  background-image: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91);
+}
+.upload-form {
+  width: 100%;
+  height: 46vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.upload-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 18vh;
+  height: 18vh;
+  background-color: #e4e4e4;
+  border: 5px solid #3f3f3f29;
+  border-radius: 50%;
+  position: relative;
+}
+.ppupload {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #858484;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 8px;
+  right: 0vh;
+}
+.profilecamera {
+  font-size: 19px;
+}
+.profilepic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profilepic:hover {
+  filter: brightness(105%);
+  transition: filter 0.1s ease;
+}
+.profile-bio h2 {
+  font-size: 23px;
+  margin-top: 8px;
+  margin-left: 5px;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: text;
+  -moz-appearance: textfield;
+}

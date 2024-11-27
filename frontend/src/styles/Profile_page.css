@@ -1,0 +1,126 @@
+.profiles {
+  background-color: rgba(191, 191, 191, 0.361);
+}
+.profile-right-title {
+  height: 3rem;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.profile-details {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  line-height: 1px;
+}
+.profile-details .p1 {
+  white-space: nowrap;
+  padding: 10px 20px;
+  height: 2.2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+}
+.profile-details p {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+.profile-details p:last-child {
+  font-size: 14px;
+  opacity: 0.9;
+}
+.profile-right-title h1 {
+  width: 30%;
+  margin-top: 0.6rem;
+  margin-left: 0.7rem;
+  font-size: 15px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.profile-section {
+  margin-top: 20px;
+  display: flex;
+}
+.profile-right {
+  width: 100%;
+  height: 90vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.profile-right::-webkit-scrollbar {
+  display: none;
+}
+.searched-list {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.searched-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+.user-profile-overlay {
+  border-radius: 10px;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 1) 80%
+  );
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.95;
+}
+@media screen and (max-width: 1200px) {
+  .profile-right-title h1 {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile-section{
+    flex-direction: column;
+  }
+  .profile-right-title {
+    align-items: center;
+  }
+  .profile-right-title h1 {
+    font-size: 12px;
+    white-space: normal;
+
+    margin-bottom: 1rem;
+  }
+  .profiles .searchedlist-right {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+  }
+  .profiles .user-details p {
+    font-size: 12px;
+  }
+  .profiles .user-details-right {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+  }
+  .profiles .user-details-right button {
+    white-space: nowrap;
+  }
+  .profiles .user-details-right a {
+    width: 50% !important;
+  }
+  .profile-details .p1 p {
+    font-size: 12px;
+  }
+}

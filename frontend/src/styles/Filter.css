@@ -1,0 +1,91 @@
+.filter {
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.712); */
+  background-color: white;
+  border-radius: 7px;
+}
+.refine-text {
+  
+ border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  /* background-color: var(--primary); */
+  /* background-image: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91); */
+}
+.refine-text h6 {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  opacity: 0.7;
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+.refine-body::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+.refine-body::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+
+
+/* Handle */
+.refine-body::-webkit-scrollbar-thumb {
+  background: #888 !important;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+.refine-body::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+.accordion {
+  font-size: 16px;
+  padding: 10px 0px;
+  position: relative;
+}
+.accordionItem {
+  width: 100%;
+  margin: 5px 0px;
+}
+.accordion .accordionItemHeading .accordionItemButton {
+  width: 100%;
+  /* border: none; */
+  /* color: #ed177e !important; */
+  box-shadow: none !important;
+  font-size: 16px;
+  padding: 10px 10px;
+  padding-left: 20px;
+  
+}
+
+.accordion .accordionItemHeading .accordionItemButton:hover {
+   background-color: var(--screen);
+}
+/* .accordionItemHeading::after {
+  content: "+";
+  font-size: 24px;
+  color: #ed177e;
+  position: absolute;
+  right: 2rem;
+  top: 13px;
+  opacity: 0.8;
+} */
+.accordion-body {
+  
+  color: rgba(0, 0, 0, 0.618);
+}
+.accordion-header {
+  margin-bottom: 0;
+}
+.form-check-input:checked {
+  background-color: #ed177e;
+  border-color: #ed177e;
+}
+.form-check-input:focus {
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+

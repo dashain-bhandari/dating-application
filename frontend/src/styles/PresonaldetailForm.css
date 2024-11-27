@@ -1,0 +1,111 @@
+.personal-detail-form {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.personal-detail-form h1 {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.491);
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.personal-detail-form form {
+  padding: 2rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.338); */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.personal-details {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.personal-details-form-left,
+.personal-details-form-middle,
+.personal-details-form-right {
+  flex-basis: 33.33%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.personal-detail-form form input {
+  border: 0px;
+  border-radius: 8px;
+  padding: 8px 20px 8px 8px;
+  font-size: 14px;
+  width: 80%;
+}
+.personal-detail-form form input:focus {
+  outline: 0px;
+}
+.personal-details-btn {
+  text-align: center;
+}
+.personal-details-btn button {
+  width: 5rem;
+  margin-right: 1rem;
+  padding: 4px 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.btnprev {
+  border: 1px solid #a4a4a4 !important;
+  color: #a4a4a4 !important;
+}
+
+.btnnext {
+  background-image: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91) !important;
+}
+.gender {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+}
+.gender .form-check-input {
+  padding: 0;
+  max-width: 1em;
+  height: 1em;
+}
+.gender .form-check-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+.group label {
+  color: #999;
+  font-size: 14px;
+  position: absolute;
+  pointer-events: none;
+  left: 7px;
+  top: 8px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.personal-detail-form form .group input:focus {
+  border: 1px solid #ed177e;
+}
+.personal-detail-form form .group input:focus ~ label,
+.personal-detail-form form .group input:valid ~ label {
+  top: -7px;
+  font-size: 11px;
+  color: #ed177e;
+  background-color: #fff;
+}
+.dob input[type="date"] {
+  color: #999;
+  font-size: 14px;
+}

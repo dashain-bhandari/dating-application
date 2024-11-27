@@ -1,0 +1,115 @@
+.userprofilemain{
+    background-color: rgba(185, 185, 185, 0.075);
+}
+.userprofile{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.user-profile-image{
+    background-color:  rgba(255, 255, 255, 0.574);
+    border-radius: 10px;
+    width: 25%;
+    padding: 10px;
+}
+.user-profile-image img{
+   width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.userprofile-details{
+    margin-top: 1rem;
+}
+.userprofile-details h3{
+font-size: 30px;
+margin-bottom: 0;
+cursor: pointer;
+}
+.userprofile-details p{
+    font-size: 13px;
+    cursor: pointer;
+}
+.userprofile-about-photos{
+    width: calc(70% - 7px);
+    background-color:  rgba(255, 255, 255, 0.574);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.3rem;
+    padding-top: 1rem;
+}
+.userprofile-about-photos button{
+    font-weight: 400;
+    position: relative;
+    left: 3rem;
+    padding: 3px 14px;
+    font-size: 16px;
+    border-radius: 30px !important;
+    background-color: rgba(128, 128, 128, 0.239) !important;
+}
+.userprofile-about-photos hr{
+  position: relative;
+  margin: 0;
+  top: .7rem;
+  width: 97%;
+}
+.userprofile-about-photos .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color:white;
+  background: #ec1c23dc !important;
+}
+.userprofile-about-photos .nav-pills .nav-link.active, .nav-pills .show > .nav-link:hover {
+  color:white !important;
+}
+.tab-pane.fade.show.active p{
+  cursor: pointer;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+}
+.grid1 .owl-theme .owl-dots .owl-dot span {
+    display: none;
+}
+  .userprofile-outline-btn{
+    margin: 8px 0px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    padding: 6px 20px;
+    outline: 1px solid rgba(128, 128, 128, 0.38);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+  }
+  .userprofile-outline-btn:hover{
+    color: #ec1c24;
+    transition:all 0.2s ease-in-out;
+  }
+  .about-tab{
+    padding-left: 3rem;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .about-tab-left{
+    width: 50%;
+  }
+  .about-tab-right{
+    width: 50%;
+  }
+  .about-tab p:nth-child(even){
+    background-color: rgba(224, 224, 224, 0.758);
+   padding: 5px 10px;
+    border-radius: 5px;
+    opacity: .9;
+  }
+  .about-tab-left h2, .about-tab-right h2{
+  margin-top: 1rem !important;
+  margin-left: .4rem;
+  font-size: 16px;
+  }
+  .about-tab-left p, .about-tab-right p{
+  font-size: 13px;
+  }
+  .userprofile-about-photos .nav.nav-pills{
+    display: flex;
+    justify-content: start;
+  }

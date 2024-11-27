@@ -1,0 +1,10 @@
+.animateActive {
+    transition: all 0.3s ease-in;
+    height: 200px !important; 
+}
+
+.animateInActive {
+   transition: all 0.3s ease-in;
+   height: 0px !important;
+   
+}

@@ -1,0 +1,56 @@
+.find-btn {
+  padding: 6px 20px;
+  margin: 5px 0px;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91);
+}
+.find-btn:hover {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.find-outline {
+  margin: 8px 0px;
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  padding: 6px 20px;
+  outline: 1px solid rgba(128, 128, 128, 0.246);
+  border-radius: 10px;
+  /* background-color: white; */
+}
+.find-outline:hover {
+  color: #ec1c24;
+  transition: all 0.2s ease-in-out;
+}
+.user-data {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex-basis: 50%;
+}
+.user-data h6,
+h5 {
+  margin: 0;
+}
+.user-data h6 {
+  font-size: 15px;
+}
+.find-user {
+  background-color: rgba(255, 255, 255, 0.712);
+  height: 9.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.user-img img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}

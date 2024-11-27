@@ -1,0 +1,82 @@
+.chat-person {
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  /* height: 4rem; */
+  width: 100%;
+  /* background-color: rgb(226, 226, 226); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.userprofile-about-photos .nav-pills .nav-link {
+  padding: 3px 14px;
+  font-size: 16px;
+  border-radius: 30px !important;
+  color: #434343;
+}
+
+.userprofile-about-photos .nav-pills .nav-link:hover {
+  color: red;
+}
+
+.menu {
+  display: none;
+  cursor: pointer
+}
+
+.chat-person:hover {
+  /* transform: scale(1.08); */
+  /* transition: transform 0.2s ease;  */
+  background-color: 'var(--screen)' !important;
+}
+
+.chat-person:hover .menu {
+  display: inline-block;
+}
+
+.chat-person-img {
+  flex-basis: 20%;
+}
+
+.chat-person-img img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.chat-person-name h6 {
+  font-size: 15px;
+  line-height: 1.1rem;
+  margin: 0;
+}
+
+.chat-person-name h6:last-child {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.chat-person-date-notification {
+  flex-basis: 25%;
+}
+
+.chat-person-date-notification h6 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.chat-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  height: 19px;
+  width: 19px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 7px;
+}

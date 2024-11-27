@@ -1,0 +1,30 @@
+.chat-sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.chat-sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.chat-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555555c2;
+}
+
+.receiverAudio {
+  background-image: url('../../images/olp_avatar.avif');
+  background-size: cover;
+  background-color: center;
+  background-repeat: no-repeat;
+}
+
+.callerAudio {
+  background-image: url('../../images/olp_avatar.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

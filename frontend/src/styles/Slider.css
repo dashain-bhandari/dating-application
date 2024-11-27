@@ -1,0 +1,119 @@
+.swipe .swiper {
+  width: 54rem;
+  height: 32rem;
+}
+.swipe .slidercard {
+  display: flex;
+  width: 650px;
+  height: 150px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+.swiper .slider_caption_title {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.swipe .swiper-pagination-bullet {
+  text-align: center;
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 13px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 13px)
+  );
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: var(--swiper-pagination-bullet-inactive-color, #ffff);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 100%);
+}
+.swipe .swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-bullet-inactive-color, #ca1111);
+}
+.swipe .slidecard_caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-left: 30px;
+}
+.swipe .slidecard_caption p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+.swipe .slidecard_caption p:last-child {
+  font-size: 18px;
+  line-height: 22px;
+  display: inline-block;
+}
+.swipe .checked {
+  font-size: 24px;
+  color: orange;
+  margin-right: 5px;
+}
+.swipe .swiper-slide {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swipe .swiper-slide-active {
+  opacity: 1;
+}
+.swipe .swiper-slide-next,
+.swipe .swiper-slide-prev {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+  .swipe .slidecard_caption {
+    margin-left: 0;
+  }
+  .swipe .slidercard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px !important;
+    border-radius: 20px;
+    width: 260px !important;
+    height: 380px !important;
+  }
+  .swipe .slidercard img {
+    width: 80%;
+  }
+  .swipe .swiper {
+    width: 35rem !important;
+  }
+
+  .swipe .swiper-slide-active {
+    opacity: 1;
+  }
+  .swipe .swiper-slide-next,
+  .swipe .swiper-slide-prev {
+    opacity: 1;
+  }
+  .swiper .slider_caption_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-bottom: 0.5rem;
+  }
+  .swiper .slider_caption_title p {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swipe .swiper {
+    width: 17rem !important;
+  }
+  .swipe .slidercard {
+    width: 260px !important;
+    height: 380px !important;
+  }
+  .swipe .slidercard img {
+    width: 80%;
+  }
+}
